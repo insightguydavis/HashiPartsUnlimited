@@ -1,15 +1,15 @@
 provider "aws" {
   region     = "eu-central-1"
   alias      = "eu-central-1"
-  access_key = "AKIARRMB547SKGEGSACX"
-  secret_key = "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"
+  # access_key = "AKIARRMB547SKGEGSACX"
+  # secret_key = "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"
 }
 
 provider "aws" {
   region     = "us-west-1"
   alias      = "us-west-1"
-  access_key = "AKIARRMB547SKGEGSACX"
-  secret_key = "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"
+  # access_key = "AKIARRMB547SKGEGSACX"
+  # secret_key = "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"
 }
 
 provider "aws" {
