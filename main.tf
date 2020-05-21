@@ -1,22 +1,22 @@
 provider "aws" {
-  region = "east-us-1"
+  region     = "east-us-1"
   access_key = "AKIARRMB547SKGEGSACX"
   secret_key = "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"
 }
 
 provider "aws" {
-  region     = "eu-central-1"
-  alias      = "eu-central-1"
+  region = "eu-central-1"
+  alias  = "eu-central-1"
 }
 
 provider "aws" {
-  region     = "us-west-1"
-  alias      = "us-west-1"
+  region = "us-west-1"
+  alias  = "us-west-1"
 }
 
 provider "aws" {
-  region     = "ap-east-1"
-  alias      = "ap-east-1"
+  region = "ap-east-1"
+  alias  = "ap-east-1"
 }
 
 data "aws_availability_zones" "eu-azs" {
@@ -39,7 +39,7 @@ module "west-app-vpc" {
   azs = data.aws_availability_zones.west-azs.names
 
   # Use cidrsubnet function with for_each to create the right number of subnets
-  public_subnets = [for i, num in data.aws_availability_zones.west-azs.names : cidrsubnet("10.0.0.0/16", 8, 101+i)]
+  public_subnets = [for i, num in data.aws_availability_zones.west-azs.names : cidrsubnet("10.0.0.0/16", 8, 101 + i)]
 
   providers = {
     aws = aws.us-west-1
@@ -56,7 +56,7 @@ module "eu-app-vpc" {
   azs = data.aws_availability_zones.eu-azs.names
 
   # Use cidrsubnet function with for_each to create the right number of subnets
-  public_subnets = [for i, num in data.aws_availability_zones.eu-azs.names : cidrsubnet("10.1.0.0/16", 8, 101+i)]
+  public_subnets = [for i, num in data.aws_availability_zones.eu-azs.names : cidrsubnet("10.1.0.0/16", 8, 101 + i)]
 
   providers = {
     aws = aws.eu-central-1
@@ -73,7 +73,7 @@ module "eu-admin-vpc" {
   azs = data.aws_availability_zones.eu-azs.names
 
   # Use cidrsubnet function with for_each to create the right number of subnets
-  public_subnets = [for num in [0, 1]: cidrsubnet("10.2.0.0/16", 8, 110+num)]
+  public_subnets = [for num in [0, 1] : cidrsubnet("10.2.0.0/16", 8, 110 + num)]
 
   providers = {
     aws = aws.eu-central-1
@@ -90,7 +90,7 @@ module "west-admin-vpc" {
   azs = data.aws_availability_zones.west-azs.names
 
   # Use cidrsubnet function with for_each to create the right number of subnets
-  public_subnets = [for num in [0, 1]: cidrsubnet("10.3.0.0/16", 8, 130+num)]
+  public_subnets = [for num in [0, 1] : cidrsubnet("10.3.0.0/16", 8, 130 + num)]
 
   providers = {
     aws = aws.us-west-1
