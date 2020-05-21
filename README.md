@@ -58,5 +58,4 @@ Map how TF supports networking equipment providers (3000 switches and routers)
 
 ## Documentation
 
-For a full overview of Cost Estimation in Terraform go to their website and read the [Cost Estimation Section](https://www.terraform.io/docs/cloud/getting-started/cost-estimation.html)
 
