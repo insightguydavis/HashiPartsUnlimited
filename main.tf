@@ -12,13 +12,6 @@ provider "aws" {
   secret_key = "RUVeX7VvODN07eZ+3G0DJYJAcEMT3bM7l5+dzE/r"
 }
 
-provider "aws" {
-  region     = "ap-east-1"
-  alias      = "ap-east-1"
-  access_key = "AKIARRMB547SKGEGSACX"
-  secret_key = "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"
-}
-
 data "aws_availability_zones" "eu-azs" {
   provider = aws.eu-central-1
   state    = "available"
