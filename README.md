@@ -29,7 +29,7 @@ SSH open to internet
 Sentinel
 Require Manager approval for deployments over $100
 
-Joe - Global VP Infrastructure
+### Joe - Global VP Infrastructure
 * Uptime Goals and Budget
 * Visibility
 * Governance - thus region requirements
@@ -38,17 +38,17 @@ Joe - Global VP Infrastructure
 * **Compliance via push button**
 * Wants demo
 
-Bo - Security
-Compliance app checklist
-Drupal PCI compliant
-Website cookie GDPR - No GDPR feature but Sentinel
-Manager actions need to be logged permanently
+### Bo - Security
+* Compliance app checklist
+* Drupal PCI compliant
+* Website cookie GDPR - No GDPR feature but Sentinel
+* Manager actions need to be logged permanently
 
-Kim - System Admin
-Manual deployment of Drupal application
-Manual checklist of compliance
-Cost Estimation
-Use TF in DevOps way - No-one should know about TF
+### Kim - System Admin
+* Manual deployment of Drupal application
+* Manual checklist of compliance
+* Cost Estimation
+* Use TF in DevOps way - No-one should know about TF
 
 Docs - how TE supports goals cost estimation, monitoring options
 Map how TF supports networking equipment providers (3000 switches and routers)
