@@ -60,6 +60,11 @@ Map how TF supports networking equipment providers (3000 switches and routers) s
 
 ## Documentation
 
+### Visibility
+
+1. With Terraform Enterprise you can setup [notifications](https://www.terraform.io/docs/cloud/workspaces/notifications.html) to let you know when events occur during planning, infrastructure creation, etc.
+2. Terraform Enterprise also displays statuses of infrastructure states in workspaces.
+
 ### Infrastructure Deployment
 
 1. Whenever possible reuse terraform modules which have already been created. These are located at the [Terraform Registry](https://registry.terraform.io/) where you can browse by provider. 
@@ -77,7 +82,6 @@ Map how TF supports networking equipment providers (3000 switches and routers) s
 For a full overview of Cost Estimation in Terraform go to their website and read the [Cost Estimation Section](https://www.terraform.io/docs/cloud/getting-started/cost-estimation.html). Here is an example of the visibility of Terraform Enterprise's cost estimation.
 
 ![Image of Cost Estimation](cost-estimation-run-98718ef7.png)
-
 
 ### Resources for Learning Terraform
 
