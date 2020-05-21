@@ -47,11 +47,11 @@ Require Manager approval for deployments over $100
 ### Kim - System Admin
 * Manual deployment of Drupal application
 * Manual checklist of compliance
-* Cost Estimation
+* **Cost Estimation**
 * Use TF in DevOps way - No-one should know about TF
 
 Docs - how TE supports goals cost estimation, monitoring options
-Map how TF supports networking equipment providers (3000 switches and routers)
+Map how TF supports networking equipment providers (3000 switches and routers) see docs
 
 ## Demonstration
 * Show how Terraform Cloud/Enterprise is used to connect to Github and Perform DevOps actions automatically
@@ -64,6 +64,15 @@ Map how TF supports networking equipment providers (3000 switches and routers)
 
 1. Whenever possible reuse terraform modules which have already been created. These are located at the [Terraform Registry](https://registry.terraform.io/) where you can browse by provider. 
 2. For Parts Unlimited create enterprise specifc modules for your workflows.
+
+### Terraform Providers
+
+1. A full list of [Terraform Providers](https://www.terraform.io/docs/providers/index.html) can be found [here](https://www.terraform.io/docs/providers/index.html)
+2. [Networking provders(https://www.terraform.io/docs/providers/type/network-index.html)] can be found [here](https://www.terraform.io/docs/providers/type/network-index.html). 
+
+### Cost Estimation
+
+For a full overview of Cost Estimation in Terraform go to their website and read the [Cost Estimation Section](https://www.terraform.io/docs/cloud/getting-started/cost-estimation.html)
 
 ### Resources for Learning Terraform
 
