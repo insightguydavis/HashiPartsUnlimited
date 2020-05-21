@@ -64,15 +64,20 @@ Map how TF supports networking equipment providers (3000 switches and routers) s
 
 1. Whenever possible reuse terraform modules which have already been created. These are located at the [Terraform Registry](https://registry.terraform.io/) where you can browse by provider. 
 2. For Parts Unlimited create enterprise specifc modules for your workflows.
+3. Because the Drupal GitHub repository is connected to Terraform Enterprise through the use of a [backend](https://www.terraform.io/docs/backends/types/remote.html) a checking to a specific branch can be configured to kick off a Terraform Deployment.
 
 ### Terraform Providers
 
 1. A full list of [Terraform Providers](https://www.terraform.io/docs/providers/index.html) can be found [here](https://www.terraform.io/docs/providers/index.html)
-2. [Networking provders(https://www.terraform.io/docs/providers/type/network-index.html)] can be found [here](https://www.terraform.io/docs/providers/type/network-index.html). 
+2. [Networking Providers(https://www.terraform.io/docs/providers/type/network-index.html)] can be found [here](https://www.terraform.io/docs/providers/type/network-index.html). 
+3. Details of the [AWS Provider](https://www.terraform.io/docs/providers/aws/index.html) which is what Parts Unlimited uses can be found [here](https://www.terraform.io/docs/providers/aws/index.html)
 
 ### Cost Estimation
 
-For a full overview of Cost Estimation in Terraform go to their website and read the [Cost Estimation Section](https://www.terraform.io/docs/cloud/getting-started/cost-estimation.html)
+For a full overview of Cost Estimation in Terraform go to their website and read the [Cost Estimation Section](https://www.terraform.io/docs/cloud/getting-started/cost-estimation.html). Here is an example of the visibility of Terraform Enterprise's cost estimation.
+
+![Image of Cost Estimation](cost-estimation-run-98718ef7.png)
+
 
 ### Resources for Learning Terraform
 
@@ -80,7 +85,7 @@ For a full overview of Cost Estimation in Terraform go to their website and read
 2. Get a Pluralsight subscription
   a. Go through the Terraform - Getting Started and Deep Dive - Terraform courses
 3. When driving listen to Terraform youtubes at: https://www.youtube.com/channel/UC-AdvAxaagE9W2f0webyNUQ/search?query=terraform
-4. The best book I have found for the technology is Manning's [Terraform in Action](https://www.manning.com/books/terraform-in-action). They frequently have sales on their products.
+4. An excellent book on Terraform is Manning's [Terraform in Action](https://www.manning.com/books/terraform-in-action). They frequently have sales on their products.
 5. Review the official documenation at https://www.terraform.io/docs/index.html
 
 ### Resources for Learning Sentinel
