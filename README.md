@@ -1,3 +1,5 @@
+![Image of Parts Unlimited](parts-unlimited.jpg)
+
 # HashiCorp Terraform CHIP - Parts Unlimited
 
 ## Drupal Application - Infrastructure Deployment With Terraform
@@ -15,7 +17,7 @@ APP
 SSH NOT open externally
 App accessible only via LB or API gateway which are open to internet
 Drupal
-Enforce deployment in US and EU only
+~~Enforce deployment in US and EU only~~
 
 Admin
 ~~Admin VPC in each region~~
@@ -52,10 +54,25 @@ Map how TF supports networking equipment providers (3000 switches and routers)
 
 ## Demonstration
 * Show how Terraform Cloud/Enterprise is used to connect to Github and Perform DevOps actions automatically
-* Show how to maintain Sentinal Policies
+* Show how to maintain Sentinel Policies
 * Demonstrate the use of Sentinel Policies
-* Demonstrate an application change and deployment in Development
 
 ## Documentation
 
+### Infrastructure Deployment
 
+1. Whenever possible reuse terraform modules which have already been created. These are located at the [Terraform Registry](https://registry.terraform.io/) where you can browse by provider. 
+2. For Parts Unlimited create enterprise specifc modules for your workflows.
+
+### Resources for Learning Terraform
+
+1. Go through the exercises here: https://learn.hashicorp.com/terraform with your Cloud Provider of Choice
+2. Get a Pluralsight subscription
+  a. Go through the Terraform - Getting Started and Deep Dive - Terraform courses
+3. When driving listen to Terraform youtubes at: https://www.youtube.com/channel/UC-AdvAxaagE9W2f0webyNUQ/search?query=terraform
+4. The best book I have found for the technology is Manning's [Terraform in Action](https://www.manning.com/books/terraform-in-action). They frequently have sales on their products.
+5. Review the official documenation at https://www.terraform.io/docs/index.html
+
+### Resources for Learning Sentinel
+
+1. Go through the web documentation for [Sentinel](https://www.terraform.io/docs/cloud/sentinel) located here [https://www.terraform.io/docs/cloud/sentinel](https://www.terraform.io/docs/cloud/sentinel)
