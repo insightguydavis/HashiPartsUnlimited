@@ -7,7 +7,7 @@ terraform {
     organization = "cardinalsolutions"
 
     workspaces {
-      prefix = "my-app-"
+      prefix = "parts-unlimited-"
     }
   }
 }
