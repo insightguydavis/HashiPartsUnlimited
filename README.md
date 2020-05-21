@@ -30,12 +30,13 @@ Sentinel
 Require Manager approval for deployments over $100
 
 Joe - Global VP Infrastructure
-Uptime Goals and Budget
-Visibility
-Governance - thus region requirements
-Cost - development environments
-Deployment to insecure environments
-Compliance via push button
+* Uptime Goals and Budget
+* Visibility
+* Governance - thus region requirements
+* **Control Cost** - development environments
+* **Control deployment to insecure environments**
+* **Compliance via push button**
+* Wants demo
 
 Bo - Security
 Compliance app checklist
