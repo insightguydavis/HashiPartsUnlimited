@@ -1,16 +1,25 @@
 provider "aws" {
-  region     = "eu-central-1"
-  alias      = "eu-central-1"
+  region = "east-us-1"
   access_key = "AKIARRMB547SKGEGSACX"
   secret_key = "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"
 }
 
 provider "aws" {
+  region     = "eu-central-1"
+  alias      = "eu-central-1"
+}
+
+provider "aws" {
   region     = "us-west-1"
   alias      = "us-west-1"
-  access_key = "AKIARRMB547SKGEGSACX"
-  secret_key = "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"
 }
+
+# provider "aws" {
+#   region     = "ap-east-1"
+#   alias      = "ap-east-1"
+#   access_key = "AKIARRMB547SKGEGSACX"
+#   secret_key = "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"
+# }
 
 data "aws_availability_zones" "eu-azs" {
   provider = aws.eu-central-1
